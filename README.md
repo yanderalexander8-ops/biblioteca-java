@@ -1,18 +1,13 @@
-# dia 1 Sistema de Gestión Biblioteca
+## Día 1 - Configuración del proyecto
 
-Proyecto desarrollado en Java por consola.
+Se realizó la configuración inicial del sistema de biblioteca.
 
-# Funcionalidades
+Actividades realizadas:
 
-- Gestión de libros
-- Gestión de usuarios
-- Gestión de préstamos
-- Sistema de login
-- Archivo de configuración
-
-# Tecnologías
-
-- Java
-- Programación Orientada a Objetos
-- Git
-- GitHub
+- Creación del proyecto en Visual Studio Code
+- Creación de la estructura de carpetas (modelos, servicios, util)
+- Creación del archivo main.java
+- Creación del archivo config.properties
+- Creación del archivo README.md
+- Inicialización del repositorio con Git
+- Primer commit del proyecto en GitHub
