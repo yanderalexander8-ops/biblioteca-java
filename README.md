@@ -11,3 +11,15 @@ Actividades realizadas:
 - Creación del archivo README.md
 - Inicialización del repositorio con Git
 - Primer commit del proyecto en GitHub
+
+## Día 2 - Creación del modelo Libro
+
+Se creó la clase Libro dentro del paquete modelos.
+
+La clase incluye:
+
+- Atributos del libro (ISBN, título, autor, año, disponibilidad)
+- Constructor
+- Métodos getters
+- Método para cambiar disponibilidad
+- Método toString para mostrar la información del libro
