@@ -23,3 +23,15 @@ La clase incluye:
 - Métodos getters
 - Método para cambiar disponibilidad
 - Método toString para mostrar la información del libro
+
+## Día 3 - Gestión de libros
+
+Se creó la clase LibroService dentro del paquete servicios.
+
+Funciones implementadas:
+
+- Registrar libros
+- Listar libros registrados
+- Buscar libro por ISBN
+
+Se utilizó ArrayList para almacenar los libros en memoria.
