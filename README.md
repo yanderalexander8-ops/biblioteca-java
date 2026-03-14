@@ -35,3 +35,18 @@ Funciones implementadas:
 - Buscar libro por ISBN
 
 Se utilizó ArrayList para almacenar los libros en memoria.
+
+## Día 4 - Implementación del menú del sistema
+
+Se implementó un menú interactivo en consola dentro del archivo main.java.
+
+El sistema ahora permite al usuario interactuar con el programa mediante diferentes opciones.
+
+Funciones agregadas:
+
+- Registrar libro
+- Listar libros
+- Buscar libro por ISBN
+- Salir del sistema
+
+Para capturar los datos ingresados por el usuario se utilizó la clase Scanner.
