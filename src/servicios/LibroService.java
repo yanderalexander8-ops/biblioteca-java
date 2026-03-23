@@ -7,11 +7,21 @@ public class LibroService {
 
     private ArrayList<Libro> listaLibros = new ArrayList<>();
 
+    
     public void registrarLibro(Libro libro) {
+
+        for (Libro l : listaLibros) {
+            if (l.getIsbn().equals(libro.getIsbn())) {
+                System.out.println("Error: Ya existe un libro con ese ISBN.");
+                return;
+            }
+        }
+
         listaLibros.add(libro);
         System.out.println("Libro registrado correctamente.");
     }
 
+    
     public void listarLibros() {
 
         if (listaLibros.isEmpty()) {
@@ -24,14 +34,13 @@ public class LibroService {
         }
     }
 
+    
     public Libro buscarLibroPorIsbn(String isbn) {
 
         for (Libro libro : listaLibros) {
-
             if (libro.getIsbn().equals(isbn)) {
                 return libro;
             }
-
         }
 
         return null;

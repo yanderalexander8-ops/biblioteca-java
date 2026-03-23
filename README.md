@@ -50,3 +50,11 @@ Funciones agregadas:
 - Salir del sistema
 
 Para capturar los datos ingresados por el usuario se utilizó la clase Scanner.
+
+## Día 5 - Validación de ISBN duplicado
+
+Se implementó una validación en el sistema para evitar el registro de libros con ISBN repetidos.
+
+Antes de registrar un libro, el sistema verifica si ya existe un libro con el mismo ISBN.
+
+Si el ISBN ya existe, el sistema muestra un mensaje de error y no permite registrar el libro.
