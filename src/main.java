@@ -13,11 +13,12 @@ public class main {
 
         do {
 
-            System.out.println(" SISTEMA BIBLIOTECA ");
+            System.out.println("\n=== SISTEMA BIBLIOTECA ===");
             System.out.println("1. Registrar libro");
             System.out.println("2. Listar libros");
             System.out.println("3. Buscar libro por ISBN");
             System.out.println("4. Salir");
+            System.out.println("5. Eliminar libro por ISBN");
             System.out.print("Seleccione una opción: ");
 
             opcion = scanner.nextInt();
@@ -70,6 +71,21 @@ public class main {
                 case 4:
 
                     System.out.println("Saliendo del sistema...");
+
+                    break;
+
+                case 5:
+
+                    System.out.print("Ingrese ISBN del libro a eliminar: ");
+                    String isbnEliminar = scanner.nextLine();
+
+                    boolean eliminado = libroService.eliminarLibro(isbnEliminar);
+
+                    if (eliminado) {
+                        System.out.println("Libro eliminado correctamente.");
+                    } else {
+                        System.out.println("No existe un libro con ese ISBN.");
+                    }
 
                     break;
 

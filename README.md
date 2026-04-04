@@ -59,14 +59,11 @@ Antes de registrar un libro, el sistema verifica si ya existe un libro con el mi
 
 Si el ISBN ya existe, el sistema muestra un mensaje de error y no permite registrar el libro.
 
-## Día 6 - Mejora en visualización de libros
+## Día 6 - Mejora visual e implementación de eliminación de libros
 
-Se mejoró la forma en la que se muestran los libros en consola.
+En esta fase se realizaron mejoras importantes para optimizar la experiencia del usuario:
 
-Ahora el sistema presenta los libros con un formato más claro, organizado y fácil de leer, incluyendo:
-
-- Título
-- Autor
-- Año
-- Estado
-- Separadores visuales
+# Mejoras realizadas:
+- Se reorganizó la visualización de los libros en consola con un formato más claro y legible.
+- Se añadió la función de eliminar libros por ISBN.
+- Se agregó al menú principal la nueva opción correspondiente.
