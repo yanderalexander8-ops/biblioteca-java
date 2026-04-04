@@ -58,3 +58,15 @@ Se implementó una validación en el sistema para evitar el registro de libros c
 Antes de registrar un libro, el sistema verifica si ya existe un libro con el mismo ISBN.
 
 Si el ISBN ya existe, el sistema muestra un mensaje de error y no permite registrar el libro.
+
+## Día 6 - Mejora en visualización de libros
+
+Se mejoró la forma en la que se muestran los libros en consola.
+
+Ahora el sistema presenta los libros con un formato más claro, organizado y fácil de leer, incluyendo:
+
+- Título
+- Autor
+- Año
+- Estado
+- Separadores visuales

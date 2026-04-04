@@ -24,15 +24,23 @@ public class LibroService {
     
     public void listarLibros() {
 
-        if (listaLibros.isEmpty()) {
-            System.out.println("No hay libros registrados.");
-            return;
-        }
-
-        for (Libro libro : listaLibros) {
-            System.out.println(libro);
-        }
+    if (listaLibros.isEmpty()) {
+        System.out.println("No hay libros registrados.");
+        return;
     }
+
+    System.out.println("\n LISTA DE LIBROS \n");
+
+    for (Libro libro : listaLibros) {
+
+        System.out.println("ISBN: " + libro.getIsbn());
+        System.out.println("Título: " + libro.getTitulo());
+        System.out.println("Autor: " + libro.getAutor());
+        System.out.println("Año: " + libro.getAnio());
+        System.out.println("Estado: " + (libro.isDisponible() ? "Disponible" : "Prestado"));
+        System.out.println("----------------------------");
+    }
+}
 
     
     public Libro buscarLibroPorIsbn(String isbn) {
