@@ -6,16 +6,16 @@ public class Libro {
     private String titulo;
     private String autor;
     private int anio;
-    private boolean disponible;
+    private boolean disponible = true;
 
     public Libro(String isbn, String titulo, String autor, int anio) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.autor = autor;
         this.anio = anio;
-        this.disponible = true;
     }
 
+    // GETTERS
     public String getIsbn() {
         return isbn;
     }
@@ -36,15 +36,31 @@ public class Libro {
         return disponible;
     }
 
+    // SETTERS
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public void setAnio(int anio) {
+        this.anio = anio;
+    }
+
     public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
 
+    @Override
     public String toString() {
-        return "ISBN: " + isbn +
-               " | Título: " + titulo +
-               " | Autor: " + autor +
-               " | Año: " + anio +
-               " | Disponible: " + disponible;
+        return "Libro{" +
+                "ISBN='" + isbn + '\'' +
+                ", Título='" + titulo + '\'' +
+                ", Autor='" + autor + '\'' +
+                ", Año=" + anio +
+                ", Estado=" + (disponible ? "Disponible" : "Prestado") +
+                '}';
     }
 }

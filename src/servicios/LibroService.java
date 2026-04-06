@@ -66,4 +66,14 @@ public class LibroService {
 
         return false;
     }
+
+    // ACTUALIZAR LIBRO (LO QUE TE FALTABA)
+    public void actualizarLibro(Libro libro, String nuevoTitulo, String nuevoAutor, int nuevoAnio) {
+
+        libro.setTitulo(nuevoTitulo);
+        libro.setAutor(nuevoAutor);
+        libro.setAnio(nuevoAnio);
+
+        System.out.println("Libro actualizado correctamente.");
+    }
 }

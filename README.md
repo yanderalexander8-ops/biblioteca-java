@@ -67,3 +67,20 @@ En esta fase se realizaron mejoras importantes para optimizar la experiencia del
 - Se reorganizó la visualización de los libros en consola con un formato más claro y legible.
 - Se añadió la función de eliminar libros por ISBN.
 - Se agregó al menú principal la nueva opción correspondiente.
+
+## Día 7 - Actualización de información de libros
+
+En este día se añadió la funcionalidad para actualizar los datos de un libro existente mediante su ISBN.
+
+### Cambios realizados:
+- Nueva opción en el menú para actualizar libros.
+- Implementación del método actualizarLibro() en LibroService.
+- Agregados setters en la clase Libro para permitir la modificación de atributos.
+- Interacción completa con el usuario para modificar título, autor y año.
+
+## 📅 Día 8 - Validaciones y mejoras del sistema
+- Validación del año (no permite negativos ni letras).
+- Validación del ISBN vacío.
+- Validación de opciones del menú.
+- Manejo de errores cuando el usuario ingresa datos inválidos.
+- Sistema más estable y profesional.
